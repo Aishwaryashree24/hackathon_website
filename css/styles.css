@@ -1,0 +1,186 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .nav ul {
+    list-style: none;
+}
+
+.header .nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header .nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #68d391;
+}
+
+.hero {
+    background-color: #f7fafc;
+    color: #333;
+    padding: 80px 0;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero .date,
+.hero .location {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero .description {
+    font-size: 20px;
+}
+
+.about {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.about .container {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.domains {
+    background-color: #f7fafc;
+    padding: 60px 0;
+}
+
+.domains .container {
+    text-align: center;
+}
+
+.domains h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.domains ul {
+    list-style-type: none;
+}
+
+.domains li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sponsors {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.sponsors .container {
+    text-align: center;
+}
+
+.sponsors h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sponsors p {
+    font-size: 18px;
+}
+
+.sponsors ul {
+    list-style-type: none;
+}
+
+.sponsors li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style contact section */
+.contact {
+    background-color: #f7fafc;
+    padding: 60px 0;
+}
+
+.contact .container {
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.contact address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
