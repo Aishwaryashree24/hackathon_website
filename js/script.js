@@ -1,15 +1,30 @@
-// Example JavaScript code for handling form submission (you can extend this as needed)
-
 document.addEventListener("DOMContentLoaded", function () {
-    const loginForm = document.getElementById("login-form");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-    loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // Get user input
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        alert("Login successful!");
-    
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
     });
 });
+fetch("/hackathon/home/")
+  .then((response) => response.json())
+  .then((data) => {
+    const eventName = data.name;
+    const eventStartDate = data.start_date;
+    const eventEndDate = data.end_date;
+    const contactNumber = data.contact_number;
+    const rounds = data.rounds;
+    const announcements = data.announcements;
+    const organizers = data.organizers;
+
+  
+    document.getElementById("event-name").textContent = eventName;
+    document.getElementById("event-start-date").textContent = eventStartDate;
+    document.getElementById("event-end-date").textContent = eventEndDate;
+    document.getElementById("contact-number").textContent = contactNumber;
+
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
